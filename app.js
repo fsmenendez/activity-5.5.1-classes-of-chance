@@ -1,5 +1,16 @@
-class Casino {
-    // Write code here
+class Casino { 
+    constructor(name){
+        this.name = name;
+       // this.isFakecoin
+        this.timesPlayed = 0;
+    }
+    playGame(betAmount){
+        if(Math.random() <= 0.5){ //math.random gives deciaml number between 0 and 1
+            console.log(this.name + 'wins!')
+        } else {
+            console.log('You win!' + betAmount)
+        }
+    }
 };
 
 // TESTS
